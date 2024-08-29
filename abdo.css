@@ -1,0 +1,100 @@
+ }
+
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f4f4f4;
+            margin: 20px; /* Margin for space around the body */
+            border: 2px solid #ddd; /* Border around the body */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow around the body */
+        
+        }
+        h1 {
+            text-align: center;
+        }
+
+        #extractButton {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        #extractButton:hover {
+            background-color: #0056b3;
+            animation: pulse-shadow 1s infinite;
+        }
+        @keyframes pulse-shadow {
+            0% {
+                box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+            }
+            50% {
+                box-shadow: 0 0 20px rgba(0, 123, 255, 0.8);
+            }
+            100% {
+                box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+            }
+
+        }
+        #loadingBar {
+            width: 0;
+            height: 5px;
+            background-color: #007BFF;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: width 5s linear;
+        }
+        #linksContainer {
+            margin-top: 20px;
+        }
+        .link-item {
+            background-color: #ffffff;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+        .link-item img {
+            width: 50px; /* Adjust size as needed */
+            height: 50px; /* Adjust size as needed */
+            margin-right: 10px;
+        
+        }
+        .link-item a {
+            text-decoration: none;
+            color: #007BFF;
+            word-break: break-word;
+        }
+        .link-item a:hover {
+            text-decoration: underline;
+        }
+        .link-title {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        #loading {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+       
+        }
+        @keyframes pulse {
+            from {
+                box-shadow: 0 0 20px 5px green;
+            }
+            to {
+                box-shadow: 0 0 25px 8px green;
+            }
+        }
+      
