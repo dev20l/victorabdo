@@ -33,7 +33,7 @@ function displayLinks(links) {
     const container = document.getElementById('linksContainer');
     container.innerHTML = '';
     if (links.length === 0) {
-        container.innerHTML = 'No links found.';
+        container.innerHTML = 'Oops! Looks like we're a bit overwhelmed with traffic right now. Hang tight and give it another shot in a bit. We're on it!';
         return;
     }
     links.forEach(link => {
